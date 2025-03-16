@@ -14,6 +14,7 @@ export async function GET(req: Request) {
         const data = await response.json();
         return Response.json(data);
     } catch (error) {
+        console.error(error);
         return Response.json({ error: "Failed to fetch data" }, { status: 500 });
     }
 }
