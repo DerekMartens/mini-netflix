@@ -79,12 +79,11 @@ export default async function Details({ params }: { params: Params }) {
                 </div>
             </div>
         )
-    } catch (error: any) {
+    } catch (error) {
         console.error(error)
         return (
             <div className='w-full p-4 bg-red-100 text-red-700 rounded-lg'>
                 <p className='text-xl font-bold mb-2'>Something went wrong</p>
-                <p>{error.message}</p>
             </div>
         )
     }
