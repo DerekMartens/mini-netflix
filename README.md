@@ -1,6 +1,14 @@
 ## Getting Started
 
-First, run the development server:
+First, create `.env` file: 
+```env
+OMDB_API_KEY=yoursecretkey
+```
+
+A free api key can be obtained from https://www.omdbapi.com/apikey.aspx.
+
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,6 +18,16 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Run the production server:
+```bash
+npm run release
+# or
+yarn release
+# etc
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
