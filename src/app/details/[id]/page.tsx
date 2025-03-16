@@ -9,7 +9,7 @@ interface Rating {
     Value: string;
 }
 
-export default async function Details({ params }: { params: Params }) {
+export default async function Details({ params }: { params: Promise<Params> }) {
     const { id } = await params;
 
     try {
